@@ -1,0 +1,222 @@
+/* Container for the entire category section */
+.pl-container8 {
+     padding: 20px;
+     margin-left: 250px;
+     margin-top: 2%;
+   }
+   
+   /* Header section containing title and new category button */
+   .pl-header8 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 10px;
+   }
+   
+   /* New category button style */
+   .pl-new-category-btn {
+     background-color: #28a745;
+     color: white;
+     padding: 8px 16px;
+     border: none;
+     border-radius: 4px;
+     text-align: center;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   /* Button hover effect */
+   .pl-new-category-btn:hover {
+     background-color: #218838;
+   }
+   
+   /* Search filter row */
+   .pl-filter-row {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     gap: 10px;
+   }
+   
+   /* Search input box */
+   .pl-filter-row input[type="text"] {
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 14px;
+     width: 100%;
+     max-width: 300px;
+   }
+   
+   /* Clear filter button */
+   .pl-clear-filter-btn {
+     background-color: #007bff;
+     color: white;
+     padding: 8px 16px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   /* Clear filter button hover effect */
+   .pl-clear-filter-btn:hover {
+     background-color: #0056b3;
+   }
+   
+   /* Table structure for categories */
+   .pl-categories-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-bottom: 20px;
+   }
+   
+   /* Table header styling */
+   .pl-categories-table th {
+     background-color: #f8f9fa;
+     text-align: left;
+     font-size: 16px;
+     padding: 12px;
+     border-bottom: 2px solid #dee2e6;
+   }
+   
+   /* Table cell styling */
+   .pl-categories-table td {
+     border: 1px solid #dee2e6;
+     padding: 12px;
+     text-align: left;
+     font-size: 14px;
+   }
+   
+   /* Bulk actions container */
+   .pl-bulk-actions {
+     margin-top: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #f8f9fa;
+     padding: 10px;
+     border-radius: 4px;
+   }
+   
+   /* Bulk delete button */
+   .pl-bulk-actions button {
+     background-color: #dc3545;
+     color: white;
+     padding: 8px 16px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   /* Bulk delete button hover effect */
+   .pl-bulk-actions button:hover {
+     background-color: #c82333;
+   }
+   
+   /* Pagination controls container */
+   .pl-pagination8 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 20px;
+     gap: 10px;
+   }
+   
+   /* Pagination control buttons */
+   .pl-pagination8 button {
+     padding: 6px 12px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   /* Pagination button hover effect */
+   .pl-pagination8 button:hover {
+     background-color: #0056b3;
+   }
+   
+   /* Pagination control disabled buttons */
+   .pl-pagination8 button:disabled {
+     background-color: #6c757d;
+     cursor: not-allowed;
+   }
+   
+   /* Category status dot (active/inactive) */
+   .pl-status {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     display: inline-block;
+     margin-right: 8px;
+   }
+   
+   /* Active status dot color (green) */
+   .pl-active {
+     background-color: green;
+   }
+   
+   /* Inactive status dot color (red) */
+   .pl-inactive {
+     background-color: red;
+   }
+   
+   /* Dropdown select styling for pagination per-page selection */
+   .pl-pagination8 select {
+     padding: 6px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 14px;
+     outline: none;
+   }
+   
+   /* Media queries for responsiveness */
+   @media (max-width: 768px) {
+     /* Adjust container margin for smaller screens */
+     .pl-container8 {
+       margin-left: 0;
+       margin-top: 7%;
+       font-size: 14px;
+     }
+   
+      .pl-categories-table th{
+          font-size: 12px;
+      }
+     /* Adjust table font size */
+     .pl-categories-table td {
+       font-size: 13px;
+     }
+   
+     /* Reduce pagination controls size */
+     .pl-pagination8 button, .pl-pagination8 select {
+       font-size: 13px;
+       padding: 4px 8px;
+     }
+   }
+   
+   @media (max-width: 480px) {
+     /* Smaller status dots for mobile */
+     .pl-status {
+       width: 8px;
+       height: 8px;
+     }
+   
+     /* Adjust table and filter row for mobile screens */
+     .pl-filter-row input[type="text"] {
+       width: 55%;
+       max-width: none;
+     }
+   
+     /* Adjust table font size for mobile screens */
+     .pl-categories-table td {
+       font-size: 12px;
+     }
+   }
+   

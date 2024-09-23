@@ -1,0 +1,153 @@
+.cms-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.cms-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.cms-new-page {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: -155px;
+}
+
+.cms-filter-bar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.cms-filter-bar input[type="text"] {
+  padding: 8px;
+  width: 50%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.cms-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cms-table th{
+  background-color: #ccc;
+  text-align: left;
+}
+.cms-table td {
+  
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.cms-page-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.cms-page-pagination-btn {
+  background-color: #1235fa;
+  border: 1px solid #1241ff;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 2px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.cms-page-pagination-btn:hover {
+  background-color: #1195e8;
+}
+
+.cms-page-pagination-btn:disabled {
+  background-color: #ccc;
+ 
+}
+
+.cms-page-pagination-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+#cms-page-total-record {
+  display: block;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #333;
+}
+.cms-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Active status - green dot */
+.cms-dot.active {
+  background-color: green;
+}
+
+/* Inactive status - red dot */
+.cms-dot.inactive {
+  background-color: red;
+}
+
+
+@media (max-width: 768px) {
+  .cms-page-container {
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .cms-page-header,
+  .cms-page-filter-bar,
+  .cms-page-pagination {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .cms-page-new {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cms-page-filter-bar input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cms-page-pagination-btn {
+    width: auto;
+    margin: 5px;
+  }
+
+  .cms-page-table th,
+  .cms-page-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

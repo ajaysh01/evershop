@@ -1,0 +1,18 @@
+.search-suggestions {
+     border: 1px solid #ccc;
+     max-height: 150px; /* Set max-height to limit the height of suggestions */
+     overflow-y: auto;  /* Allow vertical scrolling */
+     background-color: #fff;
+   }
+   
+   .search-suggestion-item {
+     padding: 10px;
+     cursor: pointer;
+   }
+   
+   .search-suggestion-item:hover,
+   .search-suggestion-item.active {
+     background-color: #f0f0f0; /* Highlight background */
+     color: #333; /* Highlight text color */
+   }
+   

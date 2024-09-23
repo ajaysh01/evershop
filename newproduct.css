@@ -1,0 +1,148 @@
+Reset some default styles
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   /* Container Styles */
+   .productform-container {
+     padding: 1.5rem; /* Equivalent to p-6 */
+     background-color:#f5f5f5;
+     width: 80%;
+     margin-top: 50px;
+     margin-left: 220px;
+     margin-bottom: 50px;
+     border: 0.5px solid lightgray;
+     border-radius: 0.5rem; /* Equivalent to rounded-lg */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+   
+   /* Form Title */
+   .productform-title {
+     font-size: 1.125rem; /* Equivalent to text-lg */
+     font-weight: 600; /* Equivalent to font-semibold */
+     margin-bottom: 1rem; /* Equivalent to mb-4 */
+     color: #333;
+   }
+   
+   /* Form Sections */
+   .productform-section {
+     margin-bottom: 1.5rem;
+   }
+   
+   /* Section Titles */
+   .productform-section-title {
+     font-size: 1.25rem;
+     margin-bottom: 1rem;
+     color: #333;
+     border-bottom: 2px solid #eee;
+     padding-bottom: 0.5rem;
+   }
+   
+   /* Form Groups */
+   .productform-form-group {
+     margin-bottom: 1rem; /* Equivalent to mb-4 */
+   }
+   
+   /* Labels */
+   .productform-label {
+     display: block;
+     margin-bottom: 0.3125rem; /* Equivalent to mb-1 */
+     font-weight: 600;
+     width: 95%;
+     color: #555;
+   }
+   
+   /* Inputs */
+   .productform-input {
+     width: 95%;
+     padding: 0.5rem; /* Equivalent to p-2 */
+     border: 1px solid #ddd;
+     border-radius: 0.25rem; /* Equivalent to rounded */
+     background-color: #f5f5f5;
+     font-size: 1rem;
+     
+     transition: border-color 0.3s, background-color 0.3s;
+   }
+   
+   /* Select Inputs */
+   .productform-select {
+     appearance: none;
+     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5'%3E%3Cpath fill='%23333' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+     background-position: right 0.5rem center;
+     background-size: 0.65rem auto;
+     padding-right: 2rem;
+   }
+   
+   /* Textareas */
+   .productform-textarea {
+     width: 95%;
+     padding: 0.5rem;
+     border: 1px solid #ddd;
+     border-radius: 0.25rem;
+     background-color: #f5f5f5;
+     font-size: 1rem;
+     transition: border-color 0.3s, background-color 0.3s;
+     resize: vertical;
+   }
+   
+   /* Flex Containers */
+   .productform-flex {
+     display: flex;
+     align-items: center;
+   }
+   
+   /* Small Inputs */
+   .productform-input-small {
+     flex: 1;
+   }
+   
+   /* Radio Groups */
+   .productform-radio-group {
+     display: flex;
+     gap: 1rem;
+     margin-top: 0.5rem;
+   }
+   
+   .productform-radio-label {
+     display: flex;
+     align-items: center;
+     gap: 0.25rem;
+     font-weight: 500;
+   }
+   
+   /* Submit Button */
+   .productform-submit-btn {
+     padding: 0.625rem 1.25rem; 
+     background-color: #045904;
+     color: #fff;
+     border: none;
+     border-radius: 0.25rem;
+     cursor: pointer;
+     font-size: 1rem;
+     font-weight: 600;
+     transition: background-color 0.3s;
+     width: 10%;
+   }
+   
+   .productform-submit-btn:hover {
+     background-color: #035303;
+   }
+   
+   /* Responsive Design */
+   @media (max-width: 768px) {
+     .productform-container {
+       padding: 1rem;
+       margin-left: 15px;
+     }
+    .productform-section-title {
+       font-size: 1.125rem;
+     }
+   
+     .productform-submit-btn {
+       font-size: 0.95rem;
+       width: 40%;
+     }
+   }
+   

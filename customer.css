@@ -1,0 +1,270 @@
+.customers-page {
+     padding: 20px;
+     margin-left: 250px; /* Adjust as necessary for your layout */
+     margin-top: 2%;
+     box-sizing: border-box;
+ }
+ 
+ .page-header {
+     font-size: 2rem;
+     margin-bottom: 20px;
+ }
+ 
+ .filters {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-bottom: 20px;
+ }
+ 
+ .search-box {
+     padding: 10px;
+     font-size: 1rem;
+     width: 100%;
+     max-width: 500px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     border: 1px solid black;
+ }
+ 
+ .status-filter {
+     padding: 10px;
+     font-size: 1rem;
+     margin-left: 20px;
+     width: 100%;
+     max-width: 200px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+ }
+ 
+ .clear-filters {
+     background-color: transparent;
+     border: none;
+     color: #007bff;
+     cursor: pointer;
+     font-size: 1rem;
+ }
+ 
+ .table-wrapper {
+     width: 100%;
+     overflow-x: auto;
+      /* Ensure spacing below table */
+ }
+ 
+ .customers-table-main{
+     width: 100%;
+     border-collapse: collapse;
+     table-layout: 100%; 
+     
+     border: 1px solid darkgrey;/* Ensure the table adjusts to content */
+ }
+ 
+ .customers-table-main th {
+    font-size: 16px;
+    background-color: darkgrey;
+    border-bottom: 1px solid #e0e0e0;
+}
+ .customers-table td {
+     padding: -10px;
+     padding-right: 140px;
+     width: 100%;
+     text-align: left;
+     border-bottom: 1px solid #e0e0e0;
+ }
+ 
+ .customers-table th {
+     background-color: #f9f9f9;
+     text-align: left;
+ }
+ 
+ .customers-table td {
+     background-color: #ffffff;
+ }
+ 
+ .customers-table td input[type="checkbox"] {
+     margin-right: 10px;
+ }
+ 
+ .selection-actions {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex-wrap: wrap;
+ }
+ 
+ .selection-actions span {
+     margin-right: 10px;
+ }
+ 
+ .action-button {
+     padding: 5px 10px;
+     border: none;
+     color: #fff;
+     cursor: pointer;
+ }
+ 
+ .action-button.enable {
+     background-color: #4caf50; /* Green */
+ }
+ 
+ .action-button.disable {
+     background-color: #f44336; /* Red */
+ }
+ 
+ .status-indicator {
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     margin-right: 8px;
+ }
+ 
+ .status-indicator.enabled {
+     background-color: green;
+ }
+ 
+ .status-indicator.disabled {
+     background-color: red;
+ }
+ .pagination-control1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pagination-btn1 {
+    padding: 5px 10px; /* Adjust button size */
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px; /* Maintain a small font size */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-btn1.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination-btn1:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination-btn1:disabled {
+    background-color: #ddd;
+    color: #888;
+    cursor: not-allowed;
+  }
+  
+  #total-record {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  
+ /* Responsive adjustments */
+ @media (max-width: 1024px) {
+     .customers-page {
+         margin: 0;
+         padding: 10px;
+     }
+ 
+     .filters {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+ 
+     .search-box,
+     .status-filter {
+         width: 100%;
+         margin: 10px 0;
+     }
+ 
+     .customers-table th{
+        padding: 10px;
+         white-space: nowrap;
+         font-size: 12px
+     }
+     .customers-table td {
+         padding: 10px;
+         white-space: nowrap;
+         font-size: 12px
+     }
+ }
+ 
+ @media (max-width: 768px) {
+     .page-header {
+         font-size: 1.75rem;
+     }
+ 
+     .search-box,
+     .status-filter {
+         font-size: 0.9rem;
+     }
+ 
+     .action-button {
+         padding: 4px 8px;
+     }
+     .pagination-control1 {
+          flex-direction: column;
+          align-items: flex-start;
+ } .pagination-btn1 {
+     width: 100%;
+     text-align: center;
+     margin-bottom: 10px;
+ }
+
+}
+ 
+ @media (max-width: 480px) {
+     .page-header {
+         font-size: 1.5rem;
+     }
+ 
+     .search-box {
+         font-size: 0.9rem;
+         width: 65px;
+         margin-left: 17px;
+         margin-bottom: -52px; /* Adjust as needed */
+     }
+ 
+     .status-filter {
+         font-size: 0.9rem;
+         width: 85px;
+         margin-left: 153px;
+         display: inline-block;
+         padding: 10px;
+         margin-bottom: -35px; /* Adjust as needed */
+     }
+ 
+     .clear-filters {
+         font-size: 0.9rem;
+         display: inline-block;
+         margin-left: 270px;
+     }
+ 
+     .customers-table th,
+     .customers-table td {
+         font-size: 0.9rem;
+         padding: 8px;
+     }
+ 
+     .action-button {
+         padding: 3px 6px;
+         font-size: 0.8rem;
+     }
+     .pagination-control1 {
+          flex-direction: column;
+          align-items: flex-start;
+     }
+      .pagination-btn1 {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+      }
+ }
+ 

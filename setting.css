@@ -1,0 +1,125 @@
+
+   .settingcontainer {
+     display: flex;
+     margin: 20px;
+     width: 75%;
+     margin-left: 250px;
+     
+   }
+   
+   .sidebar {
+     width: 25%;
+     background-color: #fff;
+     border: 1px solid #ccc;
+     padding: 20px;
+     border-radius: 8px;
+     margin-top: 25px;
+     margin-left: 168px;
+     
+   }
+   .settings-option {
+     margin-bottom: 20px;
+   }
+    .settings-option p {
+     margin: 5px 0;
+     font-size:14px;
+     color: #555;
+   }
+   .form-container {
+     width: 55%;
+     background-color: white;
+     padding: 20px;
+     border:1px solid #ccc;
+     border-radius:8px ;
+     margin-top: -380px;
+     font-size: 14px;
+     margin-left: 620px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+  .h2 {
+     font-size: 13px;
+     margin-bottom: 10px;
+     color: #333;
+   }
+   .h4 {
+     font-size: 13px;
+     margin-bottom: 10px;
+     color: #333;
+   }
+   
+   .form label {
+     display: block;
+     margin-bottom: 10px;
+     width: 97%;
+   }
+   .form label input{
+     width: 97%;
+     padding: 8px;
+     margin-top: 5px;
+     color: black;     
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 1em; 
+   }
+   .form label select {
+     width: 98.5%;
+     padding: 8px;
+     margin-top: 5px;
+     color: black;     
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 1em;
+   }
+   
+   .save-button {
+     margin-top: 20px;
+     padding: 10px 20px;
+     background-color: #28a745;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 1em;
+   }
+   
+   .save-button:hover {
+     background-color: #218838;
+   }
+   @media (max-width: 1024px) {
+     .setting-container {
+       flex-direction: row;
+       width: 100%;
+     }
+   
+     .sidebar {
+       width: 80%;
+       margin-left: 2px;
+       margin-bottom: 20px;
+     }
+   
+     .form-container {
+       width: 80%;
+       margin-left: 26px;
+       margin-top: 20px;
+     }
+   }
+   
+   /* Media Query for Mobile Devices */
+   @media (max-width: 768px) {
+     .container {
+       margin: 10px;
+     }
+   
+     .sidebar {
+       padding: 10px;
+     }
+   
+     .form-container {
+       padding: 10px;
+     }
+   
+     .save-button {
+       width: 100%;
+     }
+}

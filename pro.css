@@ -1,0 +1,392 @@
+/* Container styling */
+.product-table-container-gh {
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 5%;
+}
+
+/* Header styling */
+.table-header-gh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+/* Align 'All Products' and 'Manage View' in a row */
+.table-header-gh h3 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.header-left-gh,
+.header-right-gh {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Manage view and button styling */
+.header-left-gh h3 span {
+    color: gray;
+    font-size: 35px;
+}
+
+.header-left-gh h3 span::before {
+    content: "(";
+}
+
+.header-left-gh h3 span::after {
+    content: ")";
+}
+
+.header-right-gh .btn-more-actions-gh{
+    background-color: #058c8c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1; /* Allow buttons to grow and shrink equally */
+    text-align: center;
+    margin: 4px; /* Remove margin to keep buttons close */
+    border-radius: 5px;
+    font-size: 16px; 
+}
+.header-right-gh .btn-new-product-gh {
+    background-color: #058c8c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    margin: 4px; 
+    border-radius: 5px;
+    font-size: 16px; 
+}
+.header-right-gh {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Flexbox layout for filter row */
+.header-row-gh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Aligning filter options and search bar in a single line */
+.filter-options-gh,
+.filter-search-gh {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between elements */
+}
+
+/* Adjust dropdown and filter button styles */
+.manage-view-dropdown-gh,
+.btn-filter-gh {
+    display: flex;
+    align-items: center;
+}
+
+/* Select box styling */
+.filter-options-gh select {
+    padding: 8px;
+    border: 1px solid #058c8c;
+    border-radius: 4px;
+}
+
+/* Search input styling */
+.filter-search-gh input {
+    padding: 8px;
+    border: 1px solid #058c8c;
+    border-radius: 4px;
+    width: 250px;
+}
+
+/* Button styling */
+.btn-filter-gh {
+    display: flex;
+    align-items: center;
+    background-color: #058c8c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-filter-gh i {
+    margin-right: 8px;
+}
+
+.btn-manage-view-gh {
+    display: flex;
+    align-items: center;
+    background-color: #058c8c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.btn-manage-view-gh i {
+    margin-left: 8px;
+}
+
+/* Product table styling */
+.product-table-gh {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table-gh th,
+.product-table-gh td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.product-table-gh th {
+    background-color: #058c8ca9;
+}
+
+.product-table-gh tbody tr:hover {
+    background-color: #058c8ca9;
+}
+
+/* Button options styling */
+.btn-options-gh {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Manage View Dropdown Styles */
+.manage-view-dropdown-gh {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-gh {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.manage-view-dropdown-gh:hover .dropdown-content-gh {
+    display: block;
+}
+
+.dropdown-item-gh {
+    color: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.dropdown-item-gh:hover {
+    background-color: #058c8c;
+}
+
+.dropdown-item-gh i {
+    margin-right: 10px;
+}
+
+/* Flexbox layout for dropdown items */
+.dropdown-content-gh {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    margin-top: 8px;
+}
+
+.dropdown-item-gh:last-child {
+    border-bottom: none;
+}
+
+.product-name-cell-gh {
+    display: flex;
+    align-items: center;
+}
+
+.product-image-gh {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.product-info-gh {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-variants-gh {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Search row highlight */
+.filter-row-gh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter options and search bar alignment */
+.filter-options-gh,
+.filter-search-gh {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for filter and search input */
+.filter-options-gh select,
+.filter-search-gh input {
+    padding: 8px;
+    border: 1px solid #058c8c;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+}
+
+/* Filter button styling */
+.btn-filter-gh {
+    display: flex;
+    align-items: center;
+    background-color: #058c8c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-filter-gh i {
+    margin-right: 8px;
+}
+
+/* Manage view button styling */
+.btn-manage-view-gh {
+    display: flex;
+    align-items: center;
+    background-color: #058c8c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.btn-manage-view-gh i {
+    margin-left: 8px;
+}
+
+.table-container-gh {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table-gh {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+th-gh, td-gh {
+    padding: 12px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-table-container-gh {
+        margin-top: 15%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .header-row-gh {
+        flex-direction: column;
+        gap: 15px; /* Spacing between rows */
+    }
+
+    .table-header-gh {
+        flex-direction: column;
+    }
+
+    .header-left-gh,
+    .header-right-gh {
+        align-items: flex-start;
+    }
+
+    .header-right-gh {
+        margin-top: 10px;
+        justify-content: center; /* Center align buttons in mobile view */
+
+    }
+
+    .table-header-gh h3 {
+        font-size: 28px;
+    }
+
+    .header-right-gh .btn-more-actions-gh,
+    .header-right-gh .btn-new-product-gh {
+        margin-left: 40px;
+    }
+    
+
+    .filter-options-gh,
+    .filter-search-gh {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .filter-options-gh select,
+    .filter-search-gh input {
+        width: auto; /* Adjust width to fit in one row */
+    }
+
+    .btn-filter-gh,
+    .btn-manage-view-gh {
+        width: 100%;
+        justify-content: center;
+       
+    }
+
+    .manage-view-dropdown-gh .dropdown-content-gh {
+        min-width: 100%;
+    }
+}

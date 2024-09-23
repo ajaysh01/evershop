@@ -1,0 +1,189 @@
+.customers-page {
+     padding: 20px;
+     margin-left: 250px;
+     margin-top: 2%;
+     box-sizing: border-box;
+ }
+ 
+ .page-header {
+     font-size: 2rem;
+     margin-bottom: 20px;
+ }
+ 
+ .filters {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-bottom: 20px;
+ }
+ 
+ .search-box {
+     padding: 10px;
+     font-size: 1rem;
+     width: 100%;
+     max-width: 500px;
+     margin-bottom: 10px;
+ }
+ 
+ .status-filter {
+     padding: 10px;
+     font-size: 1rem;
+     margin-left: 20px;
+     width: 100%;
+     max-width: 200px;
+     margin-bottom: 10px;
+ }
+ 
+ .clear-filters {
+     background-color: transparent;
+     border: none;
+     color: #007bff;
+     cursor: pointer;
+     font-size: 1rem;
+ }
+ 
+ .table-wrapper {
+     width: 100%;
+     overflow-x: auto;
+ }
+ 
+ .customers-table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+ 
+ .customers-table th,
+ .customers-table td {
+     padding: 15px;
+     text-align: left;
+     border-bottom: 1px solid #e0e0e0;
+ }
+ 
+ .customers-table th {
+     background-color: #f9f9f9;
+ }
+ 
+ .customers-table td {
+     background-color: #ffffff;
+ }
+ 
+ .customers-table td input[type="checkbox"] {
+     margin-right: 10px;
+ }
+ 
+ .selection-actions {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex-wrap: wrap;
+ }
+ 
+ .selection-actions span {
+     margin-right: 10px;
+ }
+ 
+ .action-button {
+     padding: 5px 10px;
+     border: none;
+     color: #fff;
+     cursor: pointer;
+ }
+ 
+ .action-button.enable {
+     background-color: #4caf50; /* Green */
+ }
+ 
+ .action-button.disable {
+     background-color: #f44336; /* Red */
+ }
+ 
+ .status-indicator {
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     margin-right: 8px;
+ }
+ 
+ .status-indicator.enabled {
+     background-color: green;
+ }
+ 
+ .status-indicator.disabled {
+     background-color: red;
+ }
+ 
+ /* Responsive adjustments */
+ @media (max-width: 1024px) {
+     .customers-page {
+         margin: 0;
+         padding: 10px;
+     }
+ 
+     .filters {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+ 
+     .search-box, 
+     .status-filter {
+         width: 100%;
+         margin: 10px 0;
+     }
+ 
+     .customers-table th, 
+     .customers-table td {
+         padding: 10px;
+     }
+ }
+ 
+ @media (max-width: 768px) {
+     .page-header {
+         font-size: 1.75rem;
+     }
+ 
+     .search-box, 
+     .status-filter {
+         font-size: 0.9rem;
+     }
+ 
+     .action-button {
+         padding: 4px 8px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     .page-header {
+         font-size: 1.5rem;
+     }
+     .search-box {
+      font-size: 0.9rem;
+      width: 85px;
+      margin-bottom: -41px;         
+       }
+     
+       .status-filter {
+         font-size: 0.9rem;
+         width: 85px;
+         margin-left: 113px;
+         display: inline-block;
+         padding: 10px;
+         margin-bottom: -35px ;
+       }
+     
+       .clear-filters {
+         font-size: 0.9rem;
+         display: inline-block;
+         margin-left: 105px;
+       }
+     .customers-table th, 
+     .customers-table td {
+         font-size: 0.9rem;
+         padding: 8px;
+     }
+ 
+     .action-button {
+         padding: 3px 6px;
+         font-size: 0.8rem;
+     }
+ }
